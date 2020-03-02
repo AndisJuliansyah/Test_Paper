@@ -1,0 +1,21 @@
+1. Dalam mengelola versionering API, biasanya saya akan melakukan 5 tahapan :
+	a. Desain REST API
+	   - menentukan Endpoint apa saja yang akan kita pergunakan(GET,GET{id},POST,PUT,DELETE).
+	b. Pembuatan/menyiapkan Database beserta table yang nantinya dapat kita olah datanya dan tentukan Database apa yang akan dipergunakan.
+	c. Install Depedencies, yakni menentukan bahasa pemrograman apa yang akan dipakai, apabila menggunakan framework 
+	   terlebih awal akan saya lakukan penginstalan framework dan kebutuhan-kebutuhan lainnya.
+	d. Pembuatan source yang nantinya akan kita pergunakan sebagai REST API.
+	e. Testing(uji coba menggunakan POSTMAN).
+
+2. REST atau GRAPHQL, GRAPHQL sebuah konsep untuk membangun sebuah API, dengan kelebihan-kelebihan yang diunggulkan salah satu contoh mengatasi overfetching dalam         mengambil data secara berlebihan saat clien melakukan request, namun dalam kelebihan tersebut GRAPHQL dalam performa belum mengungguli REST karena belum tercatat       atau pengujian secara tertulis bahwa GRAPHQL lebih baik dari REST semua akan saya pertimbangkan kembali pada kebutuhan dalam pembuatan sistem apabila sistem dalam      sekala kecil sampai menengah tidak membutuhkan endpoint yang kompleks saya memilih REST apabila sudah cukup besar membutuhkan optimasi pada data saya memilih       GRAPHQL.
+
+3. Seberapa penting Caching, sesuai dengan fungsinya bahwa proses penyimpanan sementara data, manfaatnya yakni mengurangi bandwith yang dipakai. bagi saya penting         untuk meningkatkan performa aplikasi yang kita buat mempersingkat loading tanpa caching proses akan sedikit memakan waktu dan belum lagi sistem atau aplikasi banyak    yang mengakses.
+
+4. Menerapkan teknik Transaction dalam SQL, saat melakukan pengontrolan proses transaksi dalam database yang melibatkan dua sisi antara aplikasi dengan database dalam     contoh saya menggambarkan saat user melakukan penginputan data yang besar dengan berbagai macam algoritma didalam aplikasi yang kita buat, dimana satu data dalam       tabel terkait dengan tabel lain terjadi terputus koneksi antara aplikasi dengan database yang mengakibatkan data yang terinput hanya sebagian, sehingga menyebabkan     data tidak valid, sedangkan kita menginginkan data terinput semua, tidak sama sekali terinput atau membatalkan keseluruhan saat itulah peran salah satu teknik       transaction pada sql.
+
+5. Saya seorang yang selalu merencanakan apa yang ingin saya capai dan berangan-angan yang tinggi, dalam arti apabila saya diberikan umur yang panjang dalam jangka        waktu 10th kedepan saya ingin menempatkan diri saya menjadi orang yang dapat dipertimbangkan dalam kemajuan dunia teknologi di Indonesia, dan apabila saya diberikan    kesempatan untuk bergabung pada PT.Smartin Teknologi Sistem saya ingin berkembang dan terlibat memajukan perusahaan yang dapat dikenal pada kemajuan bisnis    di       Indonesia.
+
+6. hal pertama yang dilakukan saat Concurrency sangat tinggi, yang jelas analisis yang cukup matang diawal pembuatan sebuah sistem itu sendiri memberikan bekal pada       sistem yang dibuat berupa keamanan yang tinggi, pembuatan source yang baik sehingga dapat menstabilkan performa sistem itu sendiri, hal lain melakukan pengontrolan
+   /pengawasan kontruksi dari bahasa pemrograman mensuport dalam pembagian data.
+
+7. Recursive Function, yang saya ketahui yakni sebuah function yang mengeksekusi diri nya sendiri, sehingga saat tidak ada kondisi yang kita buat secara khusus maka       bisa pengeksekusian kode terus berulang dan tak akan berhenti. Recursive Function kita pergunakan saat kita memberikan suatu pengkondisian pada suatu function,    ingin membuat suatu code secara singkat dan dapat dijadikan sebuah solusi dalam menyelesaikan permasalahan yang kompleks dan dinamis.
